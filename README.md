@@ -8,6 +8,19 @@ Model training procedure was almost the same as in the initial filtering with li
 * Word embedding techniques were used in the vectorization. One dimensional co-occurrence matrix was used instead of word index in vector.
 * Table with final selection for full-text analysis didn't survive in its initial state. Instead of the 621-records version, a slightly filtered version with 612 records was used.
 
+## Files description
+
+* exclude.csv - filter keywords
+* full_record.csv - crude search results data set
+* io_part.py - code for file saving and loading
+* model_train.py - **start file**
+* model_update.mdl - trained GB model 
+* nlp_part_shadow.py - vectorization lib
+* selected.csv - final selection data set
+* studies_checks.py - lib that classfies search results using model and compare with final selection
+* training_data.csv - data that were used to train model 
+
+
 ## Training results
 
 Model was trained with AUC ROC = 0.93 over the test sample (30\% of the training set). 
