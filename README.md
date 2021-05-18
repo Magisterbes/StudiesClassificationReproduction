@@ -8,14 +8,11 @@ Model training procedure was almost the same as in the initial filtering with li
 * Word embedding techniques were used in the vectorization. One dimensional co-occurrence matrix was used instead of word index in vector.
 * Table with final selection for full-text analysis didn't survive in its initial state. Instead of the 621-records version, a slightly filtered version with 612 records was used.
 
-\textbf{Training results} 
+## Training results
 
 Model was trained with AUC ROC = 0.93 over the test sample (30\% of the training set). 
-\begin{table}[H]
-  \centering
 
-    \begin{tabular}{rrrrrrrrrr}
-    \multicolumn{1}{l}{Threshold} & \multicolumn{1}{l}{Eligible} & \multicolumn{1}{l}{Not Eligible} & \multicolumn{1}{l}{TP} & \multicolumn{1}{l}{FP} & \multicolumn{1}{l}{TN} & \multicolumn{1}{l}{FN} & \multicolumn{1}{l}{TPR} & \multicolumn{1}{l}{FPR} & \multicolumn{1}{l}{F1} \\
+
     0.05  & 35    & 106   & 33    & 28    & 78    & 2     & 0.942857 & 0.264151 & 0.6875 \\
     0.1   & 35    & 106   & 32    & 20    & 86    & 3     & 0.914286 & 0.188679 & 0.735632 \\
     0.15  & 35    & 106   & 30    & 13    & 93    & 5     & 0.857143 & 0.122642 & 0.769231 \\
