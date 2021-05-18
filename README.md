@@ -37,8 +37,9 @@ Model was trained with AUC ROC = 0.93 over the test sample (30\% of the training
 ## Search data classification results
 
 
-| | TPR | FPR |
-|Model testing | 0.8  | 0.07 |
+|                                                                | TPR   | FPR   |
+|--------------------------------------------------------------- |-------|-------|
+|Model testing                                                   | 0.8   | 0.07  |
 |Search results classification comparison with manually selected | 0.747 | 0.128 |
 
 The classifier shows worse results on the "real data." There are some reasons for that. The main reason is that the training data set was based on the Pubmed search results.  For quite many records from WoS no abstract was available (only shortened version of abstract). Moreover, specific Pubmed keywords were not available for studies that were presented only at Scopus and WoS. These differences affected classification performance.
