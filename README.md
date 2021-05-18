@@ -7,6 +7,7 @@ Model training procedure was almost the same as in the initial filtering with li
 * Gradient Boosting was used instead of Random Forest.
 * Word embedding techniques were used in the vectorization. One dimensional co-occurrence matrix was used instead of word index in vector.
 * Table with final selection for full-text analysis didn't survive in its initial state. Instead of the 621-records version, a slightly filtered version with 612 records was used.
+* Table of search results was gathered together from different initial files filled during the search and resulted in 9932 records with duplications.
 
 ## File descriptions
 
